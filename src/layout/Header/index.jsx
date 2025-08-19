@@ -27,7 +27,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <ul className=" hidden md:flex space-x-8 font-bold text-white">
+          <ul className=" hidden lg:flex space-x-8 font-bold text-white">
             <li><Link href="/top-casinos" className="hover:text-[#FFD600]">Top Casinos</Link></li>
             <li><Link href="/about-us" className="hover:text-[#FFD600]">About Us</Link></li>
             <li><Link href="/terms" className="hover:text-[#FFD600]">Terms & Conditions</Link></li>
@@ -37,7 +37,7 @@ export default function Header() {
 
           {/* Burger / X button for mobile */}
           <button
-            className="md:hidden z-50 cursor-pointer"
+            className="lg:hidden z-50 cursor-pointer"
             onClick={() => setOpen(!open)}
           >
             {open ? (
@@ -51,7 +51,7 @@ export default function Header() {
 
       {/* SIDE MENU */}
       <div
-        className={`fixed z-40 top-0 right-0 h-full w-64 bg-[#0B1329] text-white p-6 transform transition-transform duration-300 shadow-lg ${
+        className={`fixed z-40 top-0 right-0 h-full w-64 bg-[#260126] text-white p-6 transform transition-transform duration-300 shadow-lg ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
