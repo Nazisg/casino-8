@@ -13,65 +13,79 @@ export default function Card({ name, icon, rating, minDeposit, methods, bonus, l
                     />
                 </Link>
             </div>
-         <div className="flex flex-row lg:flex-col gap-2 items-center justify-around">
-               {/* Expert Rating */}
-            <div className=" flex flex-col gap-2 items-center justify-center">
-                <p className="opacity-50 text-[16px]">Expert Rating</p>
-                <div className="flex gap-1 items-center">
-                    {Array.from({ length: 5 }, (_, i) => {
-                        const starValue = i + 1;
-                        if (rating >= starValue) {
-                            // full star
-                            return (
-                                <img
-                                    key={i}
-                                    src="/icons/star-full.png"
-                                    alt="full star"
-                                    className="w-4 h-4"
-                                />
-                            );
-                        } else if (rating >= starValue - 0.5) {
-                            // half star
-                            return (
-                                <img
-                                    key={i}
-                                    src="/icons/star-half.png"
-                                    alt="half star"
-                                    className="w-4 h-4"
-                                />
-                            );
-                        } else {
-                            // empty star
-                            return (
-                                <img
-                                    key={i}
-                                    src="/icons/star-empty.png"
-                                    alt="empty star"
-                                    className="w-4 h-4 opacity-30"
-                                />
-                            );
-                        }
-                    })}
-                </div>
-                <h4 className="text-[24px] font-bold">{rating.toFixed(1)}</h4>
-            </div>
+           <div className="flex gap-2 items-center justify-center">
+             <div
 
-            {/* Min Deposit */}
-            <div className=" flex flex-col gap-2 items-center justify-center ">
-                <p className="opacity-50 text-[16px]">Min Deposit</p>
-                <h4 className="text-[24px] font-bold">{minDeposit}</h4>
-                <div className="flex gap-1 flex-wrap justify-center">
-                    {methods.map((method, i) => (
-                        <div
-                            key={i}
-                            className="text-[#FFD700] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#FFD700] text-[10px] xl:text-[12px]"
-                        >
-                            {method}
-                        </div>
-                    ))}
+                className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#fff] text-[10px] xl:text-[12px]"
+            >
+                UK licensed
+            </div>
+            <div
+
+                className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#fff] text-[10px] xl:text-[12px]"
+            >
+                T&C only 18+
+            </div>
+           </div>
+            <div className="flex flex-row lg:flex-col gap-2 items-center justify-around">
+                {/* Expert Rating */}
+                <div className=" flex flex-col gap-2 items-center justify-center">
+                    <p className="opacity-50 text-[16px]">Expert Rating</p>
+                    <div className="flex gap-1 items-center">
+                        {Array.from({ length: 5 }, (_, i) => {
+                            const starValue = i + 1;
+                            if (rating >= starValue) {
+                                // full star
+                                return (
+                                    <img
+                                        key={i}
+                                        src="/icons/star-full.png"
+                                        alt="full star"
+                                        className="w-4 h-4"
+                                    />
+                                );
+                            } else if (rating >= starValue - 0.5) {
+                                // half star
+                                return (
+                                    <img
+                                        key={i}
+                                        src="/icons/star-half.png"
+                                        alt="half star"
+                                        className="w-4 h-4"
+                                    />
+                                );
+                            } else {
+                                // empty star
+                                return (
+                                    <img
+                                        key={i}
+                                        src="/icons/star-empty.png"
+                                        alt="empty star"
+                                        className="w-4 h-4 opacity-30"
+                                    />
+                                );
+                            }
+                        })}
+                    </div>
+                    <h4 className="text-[24px] font-bold">{rating.toFixed(1)}</h4>
+                </div>
+
+                {/* Min Deposit */}
+                <div className=" flex flex-col gap-2 items-center justify-center ">
+                    <p className="opacity-50 text-[16px]">Min Deposit</p>
+                    <h4 className="text-[24px] font-bold">{minDeposit}</h4>
+                    <div className="flex gap-1 flex-wrap justify-center">
+                        {methods.map((method, i) => (
+                            <div
+                                key={i}
+                                className="text-[#FFD700] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#FFD700] text-[10px] xl:text-[12px]"
+                            >
+                                {method}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-         </div>
 
             {/* Welcome Bonus */}
             <div className=" flex flex-col gap-2 items-center justify-center ">

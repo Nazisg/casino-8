@@ -10,7 +10,7 @@ export default function Banner() {
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10">
                             <div className="flex flex-col rouneded-[8px] gap-2 w-full items-center cursor-pointer group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                                 <h3 className="font-bold text-[#FFD700] lg:text-[20px]">50M+</h3>
-                                <p className="text-[14px]">Total Winnings Paid</p>
+                                <p className="text-[14px]">Total Winnings</p>
                             </div>
                             <div className="flex flex-col rouneded-[8px] gap-2 w-full items-center cursor-pointer group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                                 <h3 className="font-bold text-[#FFD700] lg:text-[20px]">500K+</h3>

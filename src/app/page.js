@@ -13,7 +13,7 @@ export default function Home() {
         <Banner/>
         <TopCasinos />
         <AboutUs />
-        <TermsAndConditions />
+        {/* <TermsAndConditions /> */}
       </main>
       <Footer/>
     </>
